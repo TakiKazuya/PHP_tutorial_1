@@ -134,3 +134,25 @@ echo $x_member_array['PATA']['is_dead']; // false
 
 echo '<br>'
 ?>
+
+<?php
+// 5.演算子
+
+// 四則演算子
+echo 1 + 2; // 3
+echo 5 - 3; // 2
+echo 2 * 3; // 6
+echo 8 / 4; // 2
+echo 10 % 3; // 1
+
+// 比較演算子
+echo 2 >= 1; // 1
+// == ではなく ===を使う？
+echo 'abc' === 'acb'; //
+echo 'abc' !== 'acb'; // 1
+
+// 論理演算子
+echo 'abc' === 'acb' or 'abc' !== 'acb'; // 1
+
+echo '<br>'
+?>
