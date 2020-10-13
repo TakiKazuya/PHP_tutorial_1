@@ -245,3 +245,19 @@ echo $comment; // 80以上
 
 echo '<br>';
 ?>
+
+<?php
+// 7. foreach文
+foreach ($x_member_array as $member => $info){
+    echo '名前は' . $member . 'です。';
+    echo '担当は' . $info['part'] . 'です。';
+    echo '年齢は' . $info['age'] . 'です。';
+    if ($info['is_dead'] === 'true'){
+        echo '<br>';
+    }else{
+        echo 'まだ生きてます。<br>';
+    }
+}
+
+echo '<br>';
+?>
