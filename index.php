@@ -91,5 +91,46 @@ $array_member = [
 
 echo $array_member['name']; // イチロー
 
+$x_member_array = [
+    'YOSHIKI' => [
+        'part' => 'Dr',
+        'age' => 54,
+        'is_dead' => 'false'
+    ],
+    'Toshl' => [
+        'part' => 'Vo',
+        'age' => 54,
+        'is_dead' => 'false'
+    ],
+    'PATA' => [
+        'part' => 'Gt',
+        'age' => 54,
+        'is_dead' => 'false'
+    ],
+    'Hide' => [
+        'part' => 'Gt',
+        'age' => 33,
+        'is_dead' => 'true'
+    ],
+    'HEATH' => [
+        'part' => 'Ba',
+        'age' => 52,
+        'is_dead' => 'false'
+    ],
+    'SUGIZO' => [
+        'part' => 'Gt/Vn',
+        'age' => 51,
+        'is_dead' => 'false'
+    ],
+    'TAIJI' => [
+        'part' => 'Ba',
+        'age' => 45,
+        'is_dead' => 'true'
+    ]
+];
 
+echo $x_member_array['YOSHIKI']['age']; // 54
+echo $x_member_array['PATA']['is_dead']; // false
+
+echo '<br>'
 ?>
