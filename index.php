@@ -12,7 +12,9 @@
 echo 1 + 1; // 2
 
 echo '<br>'
-?> // この閉じ括弧は省略することができる
+
+// ↓この閉じ括弧は省略することができる
+?>
 
 <?php
 
@@ -155,4 +157,91 @@ echo 'abc' !== 'acb'; // 1
 echo 'abc' === 'acb' or 'abc' !== 'acb'; // 1
 
 echo '<br>'
+?>
+
+<?php
+// 6. 条件分岐
+
+// if文
+/*
+if (条件){
+    条件が真なら実行
+}
+*/
+
+$height = 90;
+
+if ($height === 90){
+    echo '身長は' . $height . 'cmです'; // 出力される
+}
+
+/*
+  == と ===の違い
+  == → 一致
+  === → 型も一致
+*/
+
+$height = '90'; // 文字列の90
+
+if ($height === 90){ // 条件は数字の90
+    echo '身長は' . $height . 'cmです'; // この場合、型が違うため出力されない
+}
+
+echo '<br>';
+
+// else文
+
+$signal = 'red';
+
+if ($signal === 'red'){
+    echo 'とまれ';
+}elseif ($signal === 'yellow'){
+    echo '一旦停止';
+}else{
+    echo '進む';
+}
+
+echo '<br>';
+
+// ifの中にif(ネスト)
+$signal = 'blue';
+$speed = 80;
+
+if ($signal === 'blue'){
+    if ($speed >= 80){
+        echo 'スピード違反'; // 出力される
+    }
+}// ネストはできるだけしたくない
+
+echo '<br>';
+
+$height = 90;
+
+if ($height >= 90){
+    echo '身長は90cm以上です';
+}
+
+if ($height <= 90){
+    echo '身長は90cm以下です';
+}
+
+$height = 91;
+
+if ($height !== 90){ // 基本 !==を使う。 != は使わない？
+    echo '身長は90cmではありません';
+}
+
+echo '<br>';
+
+// 三項演算子
+// if else
+//条件 ? 真 : 偽 (Rubyと一緒)
+
+$math = 80;
+
+$comment = $math >= 80 ? '80以上' : '80以下';
+
+echo $comment; // 80以上
+
+echo '<br>';
 ?>
