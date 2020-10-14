@@ -261,3 +261,29 @@ foreach ($x_member_array as $member => $info){
 
 echo '<br>';
 ?>
+
+<?php
+// 8. for, while
+
+/*
+    forとwhileの使い分け
+    for -> 繰り返す数が決まっている時
+    while -> 繰り返す数が決まっていない時
+ */
+
+// for
+for($i = 0; $i < 10; $i++){ //$iが10以下の間、{}の中を実行し、$iをインクリメントする
+    echo $i;
+}
+
+echo '<br>';
+
+// while
+$j = 0;
+while($j <5){ // $jが5より少ない間
+    echo $j; // $jを出力する
+    $j++; // $jをインクリメントする
+}// 01234
+
+echo '<br>';
+?>
