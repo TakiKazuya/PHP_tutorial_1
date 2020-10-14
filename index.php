@@ -315,4 +315,39 @@ switch ($color){
         echo '何色か分かりません';
 }
 
+echo '<br>';
+?>
+
+<?php
+// 10. 関数
+
+// インプット引数なし
+// アウトプット戻り値なし
+function test(){
+    echo 'テスト';
+}
+
+test();
+
+// インプット引数あり
+// アウトプット戻り値なし
+
+function loud($string){
+    echo '<h1>' . $string . '</h1>';
+}
+
+loud('わーーーー！！');
+$comment = 'ほげほげ！';
+loud($comment);
+
+// インプット引数なし
+// アウトプット戻り値あり
+
+function return_five(){
+    return 5;
+}
+
+echo return_five(); // 5
+
+echo '<br>';
 ?>
