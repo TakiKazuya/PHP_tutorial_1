@@ -351,3 +351,30 @@ echo return_five(); // 5
 
 echo '<br>';
 ?>
+
+<?php
+// 11. 文字列関数
+
+// 文字列の長さ
+$text = 'hogehoge';
+echo strlen($text); // 8
+
+$text = 'ほげほげ';
+echo strlen($text); // 12　(日本語の文字コードの数をカウントしてしまう)
+
+echo '<br>';
+
+// 文字列の置換
+$str = '文字列を置換します';
+echo $str; // 文字列を置換します
+echo str_replace('置換', 'ちかん', $str); // 文字列をちかんします
+
+echo '<br>';
+
+// 配列に配列を追加する
+$fruit = ['みかん', 'りんご'];
+array_push($fruit, 'ぶどう', 'なし');
+echo var_dump($fruit);
+
+echo '<br>';
+?>
