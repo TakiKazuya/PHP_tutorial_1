@@ -287,3 +287,32 @@ while($j <5){ // $jが5より少ない間
 
 echo '<br>';
 ?>
+
+<?php
+// 9.switch文
+
+// 注意: if文の方が見やすい、読みやすいので、基本的にはif文を使う
+
+$color = 'red';
+
+switch ($color){
+    case 'red':
+        echo '赤色';
+        break; // breakを記述しないと、そのまま下に流れていってしまう(続けてblueが実行されてしまう)
+    case 'blue':
+        echo '青色';
+        break;
+    case 'yellow':
+        echo '黄色';
+        break;
+    case 'green':
+        echo '緑色';
+        break;
+    case 'orange':
+        echo '橙色';
+        break;
+    default: // 他に当てはまらない時
+        echo '何色か分かりません';
+}
+
+?>
